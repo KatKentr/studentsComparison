@@ -152,10 +152,15 @@ public class Date implements Comparable<Date> {
      *
      * @return the string representation in the format MM/DD/YYYY
      */
-    @Override
-    public String toString() {
-        return month + "/" + day + "/" + year;
-    }
+//    @Override
+//    public String toString() {
+//        return month + "/" + day + "/" + year;
+//    }
+    
+  @Override
+  public String toString() {
+      return day + "/" + month + "/" + year;
+  }
 
     /**
      * Compares this date to the specified date.

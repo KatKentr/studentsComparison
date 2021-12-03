@@ -1,15 +1,27 @@
-
+/******************************************************************************
+* Compilation: javac p2e2.java
+* Execution: java p2e2 > out-p2e2.txt
+* Dependencies: StdIn.java StdOut.java Student.java MergeX.java Date.java
+* Data files: output file generated automatically
+* Aikaterini Kentroti
+******************************************************************************/
 
 public class p2e2 {
 	
 	public static void main(String[] args) {
 	
 		// create an array of students
-		Student stud1=new Student ("Katerina  Xargariti  6/17/1990  7.2  2016");
-		Student stud2=new Student("Maria  Papadakis  7/17/1992  9.2  2012");
-		Student stud3=new Student("Zoi  Bapadakis  7/17/1988  10.2  2015");
-		Student kentroti=new Student("Aikaterini Kentroti 10/01/2021 8.0 2023");
-		Student stud4=new Student("Mandy Kalogeropoulou 10/01/2018 8.0 2020");
+		Student stud1=new Student ("Sabine  Xenitsch  06/17/1990  7.2  2016");
+		Student stud2=new Student("Maria  Papadakis  08/18/1992  9.2  2012");
+		Student stud3=new Student("Zoi  Buckley  09/20/1988  10.2  2015");
+		Student kentroti=new Student("Aikaterini Kentroti 02/12/2021 8.0 2023");
+		Student stud4=new Student("Mandy Krakowitch 01/10/2018 8.0 2020");
+		
+//		Student stud1=new Student ("Μαρία  Ξανθοπολου  17/06/1990  7.2  2016");
+//		Student stud2=new Student("Φένια  Παπαδοπούλου  18/08/1992  9.2  2012");
+//		Student stud3=new Student("Ζωή  Bλαντισλάβ  20/09/1988  10.2  2015");
+//		Student kentroti=new Student("Αικατερίνη Κεντρωτή 12/02/2021 8.0 2023");
+//		Student stud4=new Student("Ματίνα Καλογεροπούλου 10/01/2018 8.0 2020");
 		Student[] students= {stud1,stud2,stud3,kentroti,stud4};
 		
 		 // 1.sort by name and print results
@@ -76,7 +88,7 @@ public class p2e2 {
         StdOut.println();
         
         //test the method equal
-        Student kat=new Student("Aikaterini Kentroti 10/01/2021 8.0 2023");
+        Student kat=new Student("Aikaterini Kentroti 02/12/2021 8.0 2023");
 
         
         StdOut.println("stud1.equals(kat):   " + (kat.equals(stud1)));

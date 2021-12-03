@@ -1,8 +1,14 @@
+/******************************************************************************
+* Compilation: javac p2e2.java
+* Execution: java p2e2 > out-p2e2.txt
+* Dependencies: StdIn.java StdOut.java Student.java MergeX.java Date.java
+* Data files: output file generated automatically
+* Aikaterini Kentroti
+******************************************************************************/
 
 import java.util.Comparator;
 
-//import StudentExample.NameOrder;
-//import StudentExample.RelativeNameOrder;
+
 
 public class Student {
 	
@@ -26,12 +32,13 @@ public class Student {
 	        when   = new Date(a[2]);
 	        grade = Double.parseDouble(a[3]);
 	        year=Integer.parseInt(a[4]);
-//	        if (Double.isNaN(amount) || Double.isInfinite(amount))
-//	            throw new IllegalArgumentException("Amount cannot be NaN or infinite");
+//	        if (Double.isNaN(grade) || Double.isInfinite(grade))
+//	            throw new IllegalArgumentException("Grade cannot be NaN or infinite");
 	    }
+	 
 	
 	
-	//Returns a comparator for comparing students in lexicographic order by name.
+	//methods to return the comparator
 	
 	 public static Comparator<Student> byNameOrder() {
 	        return new NameOrder();
@@ -158,13 +165,15 @@ public class Student {
 	        hash = 31*hash + when.hashCode();
 	        hash = 31*hash + ((Double) grade).hashCode();
 	        hash = 31*hash + ((Integer) year).hashCode();
-	        return hash;
-	        // return Objects.hash(who, when, amount);
+	        return hash;     
+	     
 	    }
 	    
 	    @Override
 	    public String toString() {
-	        return "Name and Surname:  "+ name +" Year of graduation: "+ year +" Grade: " + grade+" Registration date: "+ when;
+	    	
+	    	String[] namesplit = name.split("\\s+");
+	        return "Ονοματεπώνυμο:  "+ namesplit[1] + " " +namesplit[0]+" Έτος λήψης πτυχίου: "+ year +" Βαθμός πτυχίου: " + grade+" Ημερομηνία εγγραφής στο τμήμα: "+ when;
 	    }
 	    
 	    
