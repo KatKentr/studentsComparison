@@ -1,12 +1,12 @@
 /******************************************************************************
-* Compilation: javac p2e2.java
-* Execution: java p2e2 > out-p2e2.txt
+* Compilation: javac Main.java
+* Execution: java Main
 * Dependencies: StdIn.java StdOut.java Student.java MergeX.java Date.java
-* Data files: output file generated automatically
+* Data files: output file (e.g outout.txt) can be generated automatically though redirection from standard output to a file
 * Aikaterini Kentroti
 ******************************************************************************/
 
-public class p2e2 {
+public class Main {
 	
 	public static void main(String[] args) {
 	
@@ -17,11 +17,6 @@ public class p2e2 {
 		Student kentroti=new Student("Aikaterini Kentroti 02/12/2021 8.0 2023");
 		Student stud4=new Student("Mandy Krakowitch 01/10/2018 8.0 2020");
 		
-//		Student stud1=new Student ("Μαρία  Ξανθοπολου  17/06/1990  7.2  2016");
-//		Student stud2=new Student("Φένια  Παπαδοπούλου  18/08/1992  9.2  2012");
-//		Student stud3=new Student("Ζωή  Bλαντισλάβ  20/09/1988  10.2  2015");
-//		Student kentroti=new Student("Αικατερίνη Κεντρωτή 12/02/2021 8.0 2023");
-//		Student stud4=new Student("Ματίνα Καλογεροπούλου 10/01/2018 8.0 2020");
 		Student[] students= {stud1,stud2,stud3,kentroti,stud4};
 		
 		 // 1.sort by name and print results
@@ -78,8 +73,8 @@ public class p2e2 {
             StdOut.println(students[i]);
         StdOut.println();
         
-       //7.Relative to my name and surname
-       
+        
+       //7.Relative to my name
         StdOut.println("7.By Kentroti");
         StdOut.println("----------");
         MergeX.sort(students, kentroti.byRelativeNameOrder());

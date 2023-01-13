@@ -1,14 +1,14 @@
 /******************************************************************************
-* Compilation: javac p2e2.java
-* Execution: java p2e2 > out-p2e2.txt
-* Dependencies: StdIn.java StdOut.java Student.java MergeX.java Date.java
-* Data files: output file generated automatically
-* Aikaterini Kentroti
+* Compilation: javac Student.java
+* Dependencies: Date.java
+* Data type for students
+* Author: Aikaterini Kentroti
 ******************************************************************************/
 
 import java.util.Comparator;
 
-
+// The student class is an immutable data type that encapsulates a student with a name, registration date, grade, graduation year.
+//It is used to illustrate various comparators
 
 public class Student {
 	
